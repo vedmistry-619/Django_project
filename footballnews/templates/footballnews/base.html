@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'footballnews/main.css' %}">
     <style>
+      body{
+        background-image: linear-gradient(to bottom right, white, gray);
+      }
+      #ld{
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 30px;
+      }
     </style>
     {% if title %}
         <title>News - {{title}}</title>
@@ -22,7 +29,7 @@
         <img src="a1.svg" width="50" height="50" class="d-inline-block align-top" alt="">
       </a>
       <div class="container">
-        <a class="navbar-brand mr-4" href="{% url 'footballnews-home' %}">Football News</a>
+        <a class="navbar-brand mr-4 " id="ld" href="{% url 'footballnews-home' %}">Football News</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -61,12 +68,12 @@
       <div class="col-md-4">
         <div class="content-section">
           <h3>Football Leagues</h3>
-          <p class='text-muted'>Watch the top teams compete against eachother
+          <p class='text-muted'>Watch the top teams compete against each other
             <ul class="list-group">
-              <li class="list-group-item list-group-item-light">Premier League</li>
-              <li class="list-group-item list-group-item-light">La Liga</li>
-              <li class="list-group-item list-group-item-light">Serie A</li>
-              <li class="list-group-item list-group-item-light">Bundesliga</li>
+              <button class="btn btn-outline-dark"  onclick="location.href='https://www.premierleague.com/home'">Premier League</button>
+              <button class="btn btn-outline-dark" onclick="location.href='https://www.laliga.com/en-GB'">La Liga</li>
+              <button class="btn btn-outline-dark" onclick="location.href='https://www.legaseriea.it/en'">Serie A</li>
+              <button class="btn btn-outline-dark" onclick="location.href='https://www.bundesliga.com/en/bundesliga'">Bundesliga</li>
             </ul>
           </p>
         </div>
