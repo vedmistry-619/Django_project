@@ -1,9 +1,51 @@
 {% extends "footballnews/base.html "%}
 {% block content %}
+<head>
+        <style>
+        * {
+                box-sizing: border-box;
+              }
+              
+              .row {
+                display: flex;
+              }
+              
+              /* Create three equal columns that sits next to each other */
+              .column {
+                flex: 33.33%;
+                padding: 5px;
+              }
+        </style>
+</head>
 <div class="container p-3 my-3 border bg-white"> 
         <h2>Information</h2>
         <p font-weight: bold;>Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used. Sports commonly called football include association football (known as soccer in some countries); gridiron football (specifically American football or Canadian football); Australian rules football; rugby football (either rugby union or rugby league); and Gaelic football. These various forms of football share to varying extent common origins and are known as football codes.
 
                 There are a number of references to traditional, ancient, or prehistoric ball games played in many different parts of the world. Contemporary codes of football can be traced back to the codification of these games at English public schools during the 19th century. The expansion and cultural influence of the British Empire allowed these rules of football to spread to areas of British influence outside the directly controlled Empire. By the end of the 19th century, distinct regional codes were already developing: Gaelic football, for example, deliberately incorporated the rules of local traditional football games in order to maintain their heritage. In 1888, The Football League was founded in England, becoming the first of many professional football competitions. During the 20th century, several of the various kinds of football grew to become some of the most popular team sports in the world.</p>
 </div>
+<h2 style="text-align: center;">Our Sponsors</h2>
+<div class="row">
+        <div class="column">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/EFootball_PES_2021_Season_Update_logo.png" width="200" height="100">
+          <a style="font-weight: bold;">eFootball PES 2021</a>
+        </div>
+        <div class="column">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/21vPMCE8P8L._AC_.jpg" width="200" height="100">
+          <a style="font-weight: bold;">Player Unknown's Battlegrounds</a>
+        </div>
+        <div class="column">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_Super_League_Logo.svg/330px-The_Super_League_Logo.svg.png" width="200" height="100">
+          <a style="font-weight: bold;"> European Super League Company, S.L.</a>
+        </div>
+        <div class="column">
+           <img src="http://svkm.ac.in/svkmimages/trinity.png" width="200" height="100">
+           <br>
+           <a style="font-weight: bold;">DJSCE Trinity 2020 (Ved Mistry)</a>
+        </div>
+        <div class="column">
+            <img src="https://wpcdn.us-east-1.vip.tn-cloud.net/www.pittsburghparent.com/content/uploads/2020/09/TikTok-Logo.png" width="200" height="100">
+            <br>
+            <a style="font-weight: bold;">TikTok(For Vighu Iyer)</a>
+        </div>
+      </div>
 {% endblock content %}

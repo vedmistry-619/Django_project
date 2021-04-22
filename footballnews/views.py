@@ -66,3 +66,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 def info(request):
     return render(request,'footballnews/info.html',{'title':"Info"})
 
+def bigclubs(request):
+ 	return render(request,'footballnews/bigclubs.html',{'title':"Big Clubs"})
+

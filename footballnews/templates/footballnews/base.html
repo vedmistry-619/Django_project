@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="{% static 'footballnews/main.css' %}">
     <style>
-      body{
-        background-image: linear-gradient(to bottom right, white, gray);
-      }
       #ld{
-        font-family: Copperplate, Papyrus, fantasy;
+        font-family: "Audiowide", sans-serif;
         font-size: 30px;
       }
     </style>
@@ -24,12 +22,12 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-light bg-danger fixed-top">
-      <a class="navbar-brand" href="#">
-        <img src="a1.svg" width="50" height="50" class="d-inline-block align-top" alt="">
+    <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top">
+      <a class="navbar-brand" href="{% url 'footballnews-home' %}">
+        <img src="https://www.iconspng.com/images/square-twitter-icon.jpg" width="50" height="50" >
       </a>
       <div class="container">
-        <a class="navbar-brand mr-4 " id="ld" href="{% url 'footballnews-home' %}">Football News</a>
+        <a class="navbar-brand mr-4 " id = "ld"  href="{% url 'footballnews-home' %}">Football News</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,6 +35,7 @@
           <div class="navbar-nav mr-auto">
             <a class="nav-item nav-link" href="{% url 'footballnews-home' %}">Home</a>
             <a class="nav-item nav-link" href="{% url 'footballnews-information' %}">Info</a>
+            <a class="nav-item nav-link" href="{% url 'footballnews-bigclubs' %}">Big Clubs</a>
           </div>
 
           <div class="navbar-nav">
