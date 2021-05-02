@@ -11,7 +11,7 @@
     <style>
       #ld{
         font-family: "Audiowide", sans-serif;
-        font-size: 30px;
+        font-size: 33px;
       }
     </style>
     {% if title %}
@@ -24,7 +24,7 @@
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-light bg-info fixed-top">
       <a class="navbar-brand" href="{% url 'footballnews-home' %}">
-        <img src="https://www.iconspng.com/images/square-twitter-icon.jpg" width="50" height="50" >
+        <img src="https://pngimg.com/uploads/twitter/twitter_PNG5.png" width="50" height="50" >
       </a>
       <div class="container">
         <a class="navbar-brand mr-4 " id = "ld"  href="{% url 'footballnews-home' %}">Football News</a>
@@ -84,4 +84,60 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+<footer class="bg-info text-white text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Football News</h5>
+
+        <p>
+          Football belongs to the fans. Today more than ever. Give <span style='color: gold;'>Gary Neville</span> and <span style='color: gold;'>Jamie Carragher</span> a knighthood, they've actually helped unite football fans of clubs with the biggest rivalries for the greater good of the game.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Quick Access</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="{% url 'footballnews-bigclubs' %}" class="text-white">Big Clubs</a>
+          </li>
+          <li>
+            <a href="{% url 'footballnews-information' %}" class="text-white">Information</a>
+          </li>
+          <li>
+            <a href="{% url 'login'%}" class="text-white">Login</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Creators Panel</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Ved Mistry</a>
+            <br>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white">Ved Mistry</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </html>

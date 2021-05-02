@@ -1,4 +1,17 @@
-
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+          font-size: 20px;
+          cursor: pointer;
+          user-select: none;
+        }
+        
+        .fa:hover {
+          color: darkblue;
+        }
+    </style>
+</head>
 {% extends "footballnews\base.html" %}
 {% block content %}
     {% for post in posts %}
@@ -8,6 +21,7 @@
     			<div class="article-metadata">
     				<a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
     				<small class="text-muted">{{ post.date_posted }}</small>
+                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
     			</div>
     			<h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
     			<p class="article-content">{{ post.content }}</p>
@@ -32,7 +46,11 @@
             <a class="btn btn-outline-dark mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
             <a class="btn btn-outline-dark mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
         {% endif %}
-
+<script>
+    function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+    }
+</script>
 
     {% endif %}
 {% endblock content %}

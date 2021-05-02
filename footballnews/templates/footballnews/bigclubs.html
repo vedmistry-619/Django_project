@@ -2,8 +2,7 @@
 {% block content %}
 	<style>
 body {
-  background-color: black;
-  font-family: cursive;
+  background-color: white;
 }
 
 .glow {
@@ -11,6 +10,9 @@ body {
   color: white;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
+}
+#id{
+	display:block;
 }
 
 @-webkit-keyframes glow {
@@ -33,11 +35,12 @@ body {
 	      <div class="card">
 	        <div class="card-image">
 	          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/270px-Liverpool_FC.svg.png" width="100" height ="130">
-	          <span class="card-title" style="font: 40px Georgia, serif;">Liverpool F.C.</span>
+	          <span class="card-title" style="font: 40px Georgia, serif;">Liverpool FC </span>
 	        </div>
 	        <div class="card-content">
 	          <p>Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. Domestically, the club has won nineteen League titles, seven FA Cups, a record eight League Cups and fifteen FA Community Shields. In international competitions, the club has won six European Cups, more than any other English club, three UEFA Cups, four UEFA Super Cups (also English records) and one FIFA Club World Cup.</p>
-	        </div>
+	           <pre class = "text-muted">Stadium: Anfield		Capacity: 53,394  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://www.liverpoolfc.com/">More About LFC</a>
 	        </div>
@@ -50,11 +53,12 @@ body {
 	      <div class="card">
 	        <div class="card-image">
 	          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/270px-Manchester_United_FC_crest.svg.png" width="105" height ="110">
-	          <span class="card-title" style="font: 40px Georgia, serif;">Manchester United F.C.</span>
+	          <span class="card-title" style="font: 40px Georgia, serif;">Manchester United FC</span>
 	        </div>
 	        <div class="card-content">
 	          <p>Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.</p>
-	        </div>
+	          <pre class = "text-muted">Stadium: Old Trafford		Capacity: 74,140  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://www.manutd.com/">More About MUFC</a>
 	        </div>
@@ -67,11 +71,12 @@ body {
 	      <div class="card">
 	        <div class="card-image">
 	          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/270px-Manchester_City_FC_badge.svg.png" width="105" height ="105">
-	          <span class="card-title" style="font: 40px Georgia, serif;">Manchester City F.C.</span>
+	          <span class="card-title" style="font: 40px Georgia, serif;">Manchester City FC</span>
 	        </div>
 	        <div class="card-content">
 	          <p>Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the Etihad Stadium in east Manchester, to which it moved in 2003, having played at Maine Road since 1923. The club adopted their sky blue home shirts in 1894 in the first season of the club's current iteration, that have been used ever since.</p>
-	        </div>
+	          <pre class = "text-muted">Stadium: Etihad Stadium		Capacity: 55,017  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://www.mancity.com/">More About MCI</a>
 	        </div>
@@ -84,30 +89,14 @@ body {
 	      <div class="card">
 	        <div class="card-image">
 	          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/270px-Chelsea_FC.svg.png" width="105" height ="105">
-	          <span class="card-title" style="font: 40px Georgia, serif;">Chelsea F.C.</span>
+	          <span class="card-title" style="font: 40px Georgia, serif;">Chelsea FC</span>
 	        </div>
 	        <div class="card-content">
 	          <p>Chelsea Football Club is an English professional football club based in Fulham, London. Founded in 1905, the club competes in the Premier League, the top division of English football. Chelsea are among England's most successful clubs, having won over thirty competitive honours, including six league titles and six European trophies. Their home ground is Stamford Bridge.</p>
-	        </div>
+	          <pre class = "text-muted">Stadium: Stamford Bridge	Capacity: 40,834  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://www.chelseafc.com/en">More About CFC</a>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <br>
-	  <div class="row">
-	    <div class="col s12 m7">
-	      <div class="card">
-	        <div class="card-image">
-	          <img src="https://img-9gag-fun.9cache.com/photo/6625780_460s.jpg" width="105" height ="105">
-	          <span class="card-title" style="font: 40px Georgia, serif;">Arsenal F.C.</span>
-	        </div>
-	        <div class="card-content">
-	          <p>I Wanted To Make A Meme. But This Club Is Already A Joke.</p>
-	        </div>
-	        <div class="card-action">
-	          <a href="https://dailycannon.com/static/uploads/2021/03/arsenal-meme-2-e1615898366356.jpg">More About AFTV</a>
 	        </div>
 	      </div>
 	    </div>
@@ -123,7 +112,8 @@ body {
 	        <div class="card-content">
 	          <p>Real Madrid, is a Spanish professional football club based in Madrid.
 Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn a white home kit since inception. The word real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947.</p>
-	        </div>
+			<pre class = "text-muted">Stadium: Santiago Bernabéu	Capacity: 81,044  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://www.realmadrid.com/en">More About RMD</a>
 	        </div>
@@ -140,7 +130,8 @@ Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn
 	        </div>
 	        <div class="card-content">
 	          <p>Futbol Club Barcelona commonly referred to as Barcelona and colloquially known as Barça, is a Spanish professional football club based in Barcelona, that competes in La Liga, the top flight of Spanish football.Founded in 1899 by a group of Swiss, Spanish, English, and Catalan footballers led by Joan Gamper, the club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" ("More than a club"). Unlike many other football clubs, the supporters own and operate Barcelona. It is the fourth-most valuable sports team in the world, worth $4.06 billion, and the world's richest football club in terms of revenue, with an annual turnover of €840.8 million.</p>
-	        </div>
+	          <pre class = "text-muted">Stadium: Camp Nou		Capacity: 99,354  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://www.fcbarcelona.com/en/">More About FCB</a>
 	        </div>
@@ -157,11 +148,85 @@ Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn
 	        </div>
 	        <div class="card-content">
 	          <p>Fußball-Club Bayern München e. V., commonly known as FC Bayern München, FCB, Bayern Munich, or FC Bayern, is a German professional sports club based in Munich, Bavaria. It is best known for its professional football team, which plays in the Bundesliga, the top tier of the German football league system. Bayern is the most successful club in German football history, having won a record 30 national titles, including eight consecutively since 2013, and 20 national cups, along with numerous European honours.</p>
-	        </div>
+	          <pre class = "text-muted">Stadium: Allianz Arena		Capacity: 75,024  </pre>
+			</div>
 	        <div class="card-action">
 	          <a href="https://fcbayern.com/en">More About BAY</a>
 	        </div>
 	      </div>
 	    </div>
 	  </div>
+	  <br>
+	  <div class="row">
+	    <div class="col s12 m7">
+	      <div class="card">
+	        <div class="card-image">
+	          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juventus_FC_2017_icon_%28black%29.svg/165px-Juventus_FC_2017_icon_%28black%29.svg.png" width="73" height ="110">
+	          <span class="card-title" style="font: 40px Georgia, serif;">Juventus FC</span>
+	        </div>
+	        <div class="card-content">
+	          <p>Juventus Football Club is a professional football club based in Turin, Piedmont, Italy, that competes in the Serie A, the top flight of Italian football. Founded in 1897 by a group of Torinese students, the club has worn a black and white striped home kit since 1903 and has played home matches in different grounds around its city, the latest being the 41,507-capacity Juventus Stadium. Nicknamed Vecchia Signora ("the Old Lady"), the club has won 36 official league titles, 13 Coppa Italia titles and nine Supercoppa Italiana titles, being the record holder for all these competitions; two Intercontinental Cups, two European Cups / UEFA Champions Leagues, one European Cup Winners' Cup, a joint national record of three UEFA Cups, two UEFA Super Cups and a joint national record of one UEFA Intertoto Cup.</p>
+	          <pre class = "text-muted">Stadium: Allianz Stadium	Capacity: 41,507   </pre>
+			</div>
+	        <div class="card-action">
+	          <a href="https://www.juventus.com/en/">More About JUV</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <br>
+	  <div class="row">
+	    <div class="col s12 m7">
+	      <div class="card">
+	        <div class="card-image">
+	          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/270px-FC_Internazionale_Milano_2021.svg.png" width="100" height ="100">
+	          <span class="card-title" style="font: 40px Georgia, serif;">FC Internazionale Milano</span>
+	        </div>
+	        <div class="card-content">
+	          <p>Inter Milan is an Italian professional football club based in Milan, Lombardy. Inter is the only Italian club never to have been relegated from the top flight of Italian football.Founded in 1908 following a schism within the Milan Cricket and Football Club (now A.C. Milan), Inter won its first championship in 1910. Since its formation, the club has won 30 domestic trophies, including 18 league titles, 7 Coppa Italia and 5 Supercoppa Italiana. Also won UCL 2 times and one Treble</p>
+	          <pre class = "text-muted">Stadium: San Siro		Capacity: 75,923  </pre>
+			</div>
+	        <div class="card-action">
+	          <a href="https://www.inter.it/en">More About INT</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <br>
+	  <div class="row">
+	    <div class="col s12 m7">
+	      <div class="card">
+	        <div class="card-image">
+	          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/1200px-Logo_of_AC_Milan.svg.png" width="73" height ="110">
+	          <span class="card-title" style="font: 40px Georgia, serif;">AC Milan</span>
+	        </div>
+	        <div class="card-content">
+	          <p>A.C. Milan's 18 FIFA and UEFA trophies is the fourth highest out of any club (joint with Boca Juniors), and the most out of any Italian club. Milan has won a joint record three Intercontinental Cups and one FIFA Club World Cup, seven European Cup/Champions League titles (Italian record), the UEFA Super Cup a joint record five times and the Cup Winners' Cup twice. With 18 league titles, Milan is also the joint-second most successful club in Serie A, along with local rivals Inter Milan and behind Juventus (36 league titles). They have also won the Coppa Italia five times, and the Supercoppa Italiana seven.</p>
+	          <pre class = "text-muted">Stadium: San Siro		Capacity: 75,923  </pre>
+			</div>
+	        <div class="card-action">
+	          <a href="https://www.acmilan.com/en">More About ACM</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <br>
+	  <div class="row">
+	    <div class="col s12 m7">
+	      <div class="card">
+	        <div class="card-image">
+	          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/225px-Atletico_Madrid_2017_logo.svg.png" width="75" height ="100">
+	          <span class="card-title" style="font: 40px Georgia, serif;">Club Atlético de Madrid</span>
+	        </div>
+	        <div class="card-content">
+	          <p>Atlético Madrid are the third most successful club in Spanish football – behind Real Madrid and Barcelona. Atlético have won La Liga on 10 occasions, including a league and cup double in 1996; the Copa del Rey on 10 occasions; two Supercopas de España, one Copa Presidente FEF and one Copa Eva Duarte; in Europe, they won the European Cup Winners' Cup in 1962, were runners-up in 1963 and 1986, were UEFA Champions League runners-up in 1974, 2014 and 2016,[5] won the Europa League in 2010, 2012 and 2018, and won the UEFA Super Cup in 2010, 2012 and 2018 as well as the 1974 Intercontinental Cup.</p>
+	          <pre class = "text-muted">Stadium: Wanda Metropolitano 	Capacity: 68,456  </pre>
+			</div>
+	        <div class="card-action">
+	          <a href="https://en.atleticodemadrid.com/">More About ATL</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <br>
 {% endblock content %}
